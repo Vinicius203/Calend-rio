@@ -20,8 +20,7 @@ function openModal(date) {
   if (eventForDay) {
     document.getElementById('eventText').innerText = eventForDay.title;
     deleteEventModal.style.display = 'block';
-
-    // Adicione a lógica para exibir os novos dados
+    
     document.getElementById('eventContent').innerText = `Conteúdo: ${eventForDay.content || '-'}`;
     document.getElementById('eventTime').innerText = `Horário: ${eventForDay.time || '-'}`;
     document.getElementById('eventClass').innerText = `Turma: ${eventForDay.class || '-'}`;
